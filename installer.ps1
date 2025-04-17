@@ -1,0 +1,14 @@
+﻿winget install --id=Discord.Discord  -e
+winget install --id=Brave.Brave  -e
+winget install --id=Spotify.Spotify  -e
+winget install --id=Microsoft.VisualStudioCode  -e
+winget install --id=Microsoft.WindowsTerminal  -e
+winget install --id=Valve.Steam  -e
+winget install --id=WinSCP.WinSCP  -e
+winget install --id=Docker.DockerDesktop  -e
+winget install --id=Ollama.Ollama  -e
+winget install --id=Git.Git  -e
+winget install --id=RARLab.WinRAR  -e
+winget install --id=qBittorrent.qBittorrent  -e
+winget install --id=VideoLAN.VLC  -e
+winget install JanDeDobbeleer.OhMyPosh -s winget
