@@ -11,4 +11,4 @@ winget install --id=Git.Git  -e
 winget install --id=RARLab.WinRAR  -e
 winget install --id=qBittorrent.qBittorrent  -e
 winget install --id=VideoLAN.VLC  -e
-winget install JanDeDobbeleer.OhMyPosh -s winget
+winget install --id=TeamViewer.TeamViewer  -e
