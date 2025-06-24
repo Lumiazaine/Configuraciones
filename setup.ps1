@@ -137,4 +137,12 @@ while ($true) {
 }
 
 Write-Host 'Orientación y frecuencia establecidas.'
+
+# 7. Instalar y habilitar servidor SSH
+Write-Host 'Instalando y habilitando OpenSSH Server...'
+Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0 -ErrorAction SilentlyContinue | Out-Null
+Start-Service sshd
+Set-Service -Name sshd -StartupType Automatic
+Write-Host 'Servidor SSH activado y configurado para iniciar automáticamente.'
+
 Write-Host '=== Configuración completada ==='
