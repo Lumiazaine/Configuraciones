@@ -14,3 +14,4 @@ winget install --id=Synology.DriveClient  -e
 winget install --id=RustDesk.RustDesk  -e
 winget install --id=Microsoft.PowerShell  -e
 winget install --id=RazerInc.RazerInstaller.Synapse4  -e
+winget install --id=ch.LosslessCut  -e
