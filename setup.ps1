@@ -145,4 +145,10 @@ Start-Service sshd
 Set-Service -Name sshd -StartupType Automatic
 Write-Host 'Servidor SSH activado y configurado para iniciar automáticamente.'
 
+# 8. Habilitar Escritorio Remoto
+Write-Host 'Habilitando Escritorio Remoto...'
+Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server' -Name 'fDenyTSConnections' -Value 0
+Enable-NetFirewallRule -DisplayGroup 'Remote Desktop'
+Write-Host 'Escritorio Remoto habilitado y reglas de firewall activadas.'
+
 Write-Host '=== Configuración completada ==='
